@@ -6,6 +6,8 @@ import ErrorPage from "../Components/pageError";
 import LoginPage from "../Pages/LoginPage";
 import RegisterPage from "../Pages/RegisterPage";
 import ForgotPassword from "../Components/ForgotPassword";
+import StatisticPage from "../Pages/StaticPage";
+import BeritaPage from "../Pages/BeritaPage/inde";
 
 export const routes = createBrowserRouter([
   // Route Konsumen
@@ -28,6 +30,16 @@ export const routes = createBrowserRouter([
       {
         path: "/forgot-password",
         element: <ForgotPassword />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/statistik",
+        element: <StatisticPage />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/berita",
+        element: <BeritaPage />,
         errorElement: <ErrorPage />,
       },
     ],

@@ -45,12 +45,16 @@ const Navbar = () => {
         <div className="left-[578px] top-[131px] absolute text-black text-2xl font-bold font-['Inter']">
           TENTANG
         </div>
-        <div className="left-[820px] top-[131px] absolute text-black text-2xl font-bold font-['Inter']">
-          STATISTIK
-        </div>
-        <div className="left-[1080px] top-[131px] absolute text-black text-2xl font-bold font-['Inter']">
-          BERITA
-        </div>
+        <Link to="/statistik">
+          <div className="left-[820px] top-[131px] absolute text-black text-2xl font-bold font-['Inter']">
+            STATISTIK
+          </div>
+        </Link>
+        <Link to="/berita">
+          <div className="left-[1080px] top-[131px] absolute text-black text-2xl font-bold font-['Inter']">
+            BERITA
+          </div>
+        </Link>
         <div className="w-[105px] h-[105px] left-[47px] top-[31px] absolute bg-white rounded-full border-2 border-black" />
       </div>
     </div>
