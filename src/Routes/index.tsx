@@ -4,6 +4,8 @@ import NotFoundPage from "../Components/notFound";
 import BerandaPage from "../Pages/BerandaPage/inde";
 import ErrorPage from "../Components/pageError";
 import LoginPage from "../Pages/LoginPage";
+import RegisterPage from "../Pages/RegisterPage";
+import ForgotPassword from "../Components/ForgotPassword";
 
 export const routes = createBrowserRouter([
   // Route Konsumen
@@ -16,6 +18,16 @@ export const routes = createBrowserRouter([
       {
         path: "/login",
         element: <LoginPage />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/register",
+        element: <RegisterPage />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/forgot-password",
+        element: <ForgotPassword />,
         errorElement: <ErrorPage />,
       },
     ],

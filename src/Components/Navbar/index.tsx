@@ -20,11 +20,13 @@ const Navbar = () => {
           />
         </div>
         <div className="inline-flex gap-3">
-          <div className="px-[37px] py-3  top-[38px]  bg-black rounded-[20px] justify-center items-center ">
-            <div className="text-white text-2xl font-bold font-['Inter']">
-              Daftar
+          <Link to="/register">
+            <div className="px-[37px] py-3  top-[38px]  bg-black rounded-[20px] justify-center items-center ">
+              <div className="text-white text-2xl font-bold font-['Inter']">
+                Daftar
+              </div>
             </div>
-          </div>
+          </Link>
           <Link to="/login">
             <div className="pl-[35px] pr-[34px] py-3  top-[38px]  bg-white rounded-[20px] border-2 border-black justify-center items-center ">
               <div className="text-black text-2xl font-bold font-['Inter']">
