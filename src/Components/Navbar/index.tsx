@@ -1,5 +1,6 @@
 import React from "react";
 import { ImageShare } from "../../Asets/images";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -24,17 +25,21 @@ const Navbar = () => {
               Daftar
             </div>
           </div>
-          <div className="pl-[35px] pr-[34px] py-3  top-[38px]  bg-white rounded-[20px] border-2 border-black justify-center items-center ">
-            <div className="text-black text-2xl font-bold font-['Inter']">
-              Masuk
+          <Link to="/login">
+            <div className="pl-[35px] pr-[34px] py-3  top-[38px]  bg-white rounded-[20px] border-2 border-black justify-center items-center ">
+              <div className="text-black text-2xl font-bold font-['Inter']">
+                Masuk
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
       <div>
-        <div className="left-[377px] top-[131px] absolute text-black text-2xl font-bold font-['Inter']">
-          BERANDA
-        </div>
+        <Link to="/">
+          <div className="left-[377px] top-[131px] absolute text-black text-2xl font-bold font-['Inter']">
+            BERANDA
+          </div>
+        </Link>
         <div className="left-[578px] top-[131px] absolute text-black text-2xl font-bold font-['Inter']">
           TENTANG
         </div>
