@@ -1,5 +1,6 @@
 import React from "react";
 import { ImagePrice, ImageSlide } from "../../../Asets/images";
+import { Link } from "react-router-dom";
 
 const dataValue = [
   {
@@ -47,11 +48,13 @@ const DetailPrice = () => {
           </p>
         </div>
       </section>
-      <div className="w-full text-center mt-[30px]">
-        <button className="text-white text-center bg-red-700 py-[10px] px-[40px] rounded-xl text-2xl font-bold font-['Inter']">
-          BELI SEKARANG
-        </button>
-      </div>
+      <Link to="/denah">
+        <div className="w-full text-center mt-[30px]">
+          <button className="text-white text-center bg-red-700 hover:bg-red-900 py-[10px] px-[40px] rounded-xl text-2xl font-bold font-['Inter']">
+            BELI SEKARANG
+          </button>
+        </div>
+      </Link>
     </section>
   );
 };

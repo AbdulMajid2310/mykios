@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { IconLock, IconUser } from "../../Asets/icons";
 import { Link } from "react-router-dom";
 import { ImageShare, ImageSlide } from "../../Asets/images";
 
 const LoginPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main
       className="grid grid-cols-2 gap-[50px] mx-[60px] mt-[60px] pb-[100px]
@@ -23,9 +26,11 @@ const LoginPage = () => {
             <p className="left-[93px] top-[95px]  text-black/opacity-50 text-base font-bold font-inter">
               Baru di Website pasar proklamasi?
             </p>
-            <p className="left-[365px] top-[95px]  text-red-600 text-base font-bold font-['Inter']">
-              Daftar disini
-            </p>
+            <Link to="/register">
+              <p className="left-[365px] cursor-pointer top-[95px]  text-red-600 hover:text-red-900 text-base font-bold font-['Inter']">
+                Daftar disini
+              </p>
+            </Link>
           </div>
 
           <div className="px-[20px] mt-[20px]">
@@ -45,14 +50,14 @@ const LoginPage = () => {
             <div className="absolute mt-[-40px] ml-[10px]">{IconLock()}</div>
           </div>
           <Link to="/">
-            <div className="w-[511px] mx-[20px] mt-[30px] h-[51px] pl-[207px] pr-[225px] py-[11px] bg-red-600 rounded-[5px] justify-start items-center inline-flex">
+            <div className="w-[511px] mx-[20px] mt-[30px] h-[51px] pl-[207px] pr-[225px] py-[11px] bg-red-600 hover:bg-red-900 rounded-[5px] justify-start items-center inline-flex">
               <div className="text-white text-2xl font-bold font-['Inter']">
                 Masuk
               </div>
             </div>
           </Link>
           <Link to="/forgot-password">
-            <div className="text-right mr-[20px] mt-[20px] text-red-600 text-base font-bold font-['Inter']">
+            <div className="text-right mr-[20px] mt-[20px] text-red-600 hover:text-red-900 text-base font-bold font-['Inter']">
               Lupa Kata Sandi?
             </div>
           </Link>

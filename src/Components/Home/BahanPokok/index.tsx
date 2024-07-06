@@ -229,7 +229,7 @@ const BahanPokok: React.FC = () => {
   };
 
   return (
-    <main className="w-full mt-[40px] ">
+    <main className="w-full mt-[60px] ">
       <section>
         <h1 className="text-black mb-[30px] text-2xl font-bold font-['Inter']">
           Harga Barang Kebutuhan Pokok
@@ -274,7 +274,7 @@ const BahanPokok: React.FC = () => {
               <div className="flex mb-4">
                 <button
                   onClick={() => handlePeriodClick("day")}
-                  className={`px-4 py-2 mr-2 ${
+                  className={`px-5 py-2 mr-2 rounded-full ${
                     period === "day" ? "bg-red-500 text-white" : "bg-gray-200"
                   }`}
                 >
@@ -282,7 +282,7 @@ const BahanPokok: React.FC = () => {
                 </button>
                 <button
                   onClick={() => handlePeriodClick("month")}
-                  className={`px-4 py-2 mr-2 ${
+                  className={`px-5 py-2 mr-2 rounded-full ${
                     period === "month" ? "bg-red-500 text-white" : "bg-gray-200"
                   }`}
                 >
@@ -290,7 +290,7 @@ const BahanPokok: React.FC = () => {
                 </button>
                 <button
                   onClick={() => handlePeriodClick("year")}
-                  className={`px-4 py-2 ${
+                  className={`px-5 py-2  rounded-full ${
                     period === "year" ? "bg-red-500 text-white" : "bg-gray-200"
                   }`}
                 >

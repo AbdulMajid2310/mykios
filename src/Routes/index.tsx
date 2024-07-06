@@ -8,6 +8,13 @@ import RegisterPage from "../Pages/RegisterPage";
 import ForgotPassword from "../Components/ForgotPassword";
 import StatisticPage from "../Pages/StaticPage";
 import BeritaPage from "../Pages/BeritaPage/inde";
+import ProfilPage from "../Pages/ProfilPage";
+import KiosPage from "../Pages/KiosPage";
+import DetailKios from "../Components/DetailKios";
+import Denah from "../Components/Denah";
+import Tentang from "../Pages/Tentang";
+import DetailBerita from "../Components/DetailBerita";
+import DetailPaymen from "../Components/DetailPayment";
 
 export const routes = createBrowserRouter([
   // Route Konsumen
@@ -40,6 +47,41 @@ export const routes = createBrowserRouter([
       {
         path: "/berita",
         element: <BeritaPage />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/detail-berita",
+        element: <DetailBerita />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/profile",
+        element: <ProfilPage />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/my-kios",
+        element: <KiosPage />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/detail-kios",
+        element: <DetailKios />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/denah",
+        element: <Denah />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/tentang",
+        element: <Tentang />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/detail-payment",
+        element: <DetailPaymen />,
         errorElement: <ErrorPage />,
       },
     ],

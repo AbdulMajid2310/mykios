@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ImagePrice } from "../../Asets/images";
+import { Link } from "react-router-dom";
 
 const BeritaPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="m-[60px]">
       {[1, 2, 3, 4, 5].map((i) => (
-        <div className="flex gap-[40px] mb-[20px]">
+        <Link to="/detail-berita" className="flex gap-[40px] mb-[20px]">
           <div className="w-[600px] h-[300px]">
             <img
               src={ImagePrice}
@@ -27,7 +31,7 @@ const BeritaPage = () => {
               consectetur ullam commodi nesciunt illum necessitatibus maiores.
             </p>
           </div>
-        </div>
+        </Link>
       ))}
     </section>
   );

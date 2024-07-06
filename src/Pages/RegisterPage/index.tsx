@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   IconCard,
@@ -20,6 +20,9 @@ const RegisterPage = () => {
   const handleClose = () => {
     setShowSucces(false);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main>
       <section>
@@ -42,7 +45,7 @@ const RegisterPage = () => {
               <Link to="/login">
                 <div
                   onClick={handleClose}
-                  className="w-[511px] cursor-pointer mx-[20px] mt-[30px] h-[51px] pl-[207px] pr-[225px] py-[11px] bg-red-600 rounded-[5px] justify-start items-center inline-flex"
+                  className="w-[511px] cursor-pointer mx-[20px] mt-[30px] h-[51px] pl-[207px] pr-[225px] py-[11px] bg-red-600 hover:bg-red-900 rounded-[5px] justify-start items-center inline-flex"
                 >
                   <div className="text-white text-2xl font-bold font-['Inter']">
                     Selesai
@@ -126,7 +129,7 @@ const RegisterPage = () => {
 
             <div
               onClick={handleOpenSucces}
-              className="w-[511px] mx-[20px] mt-[30px] h-[51px] pl-[207px] pr-[225px] py-[11px] bg-red-600 rounded-[5px] justify-start items-center inline-flex"
+              className="w-[511px] mx-[20px] mt-[30px] h-[51px] pl-[207px] pr-[225px] py-[11px] bg-red-600 hover:bg-red-900 rounded-[5px] justify-start items-center inline-flex"
             >
               <div className="text-white text-2xl font-bold font-['Inter']">
                 Masuk
