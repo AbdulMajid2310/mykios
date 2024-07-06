@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../../Components/Navbar";
 import { Outlet } from "react-router-dom";
+import Footer from "../../Components/Footer";
 
 const Dashboard = () => {
   return (
@@ -10,6 +11,9 @@ const Dashboard = () => {
       </section>
       <section className="pt-[200px]">
         <Outlet />
+      </section>
+      <section>
+        <Footer />
       </section>
     </main>
   );
